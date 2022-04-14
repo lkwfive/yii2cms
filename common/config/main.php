@@ -1,0 +1,23 @@
+<?php
+return [
+    'aliases' => [
+        '@bower' => '@vendor/bower-asset',
+        '@npm'   => '@vendor/npm-asset',
+    ],
+    'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
+    'components' => [
+        'cache' => [
+            'class' => 'yii\caching\FileCache',
+        ],
+        'settings' => [
+            'class' => 'pheme\settings\components\Settings',
+            'autoDecodeJson' => true,
+        ],
+        'urlManager' => [
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            'rules' => [
+            ],
+        ],
+    ],
+];
