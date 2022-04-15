@@ -15,7 +15,7 @@ is a separate Yii application.
 The template is designed to work in a team development environment. It supports
 deploying the application in different environments.
 
-Documentation is at [docs/guide/README.md](docs/guide/README.md).
+Documentation is at [docs/guide/README.md](https://github.com/yiisoft/yii2-app-advanced/blob/master/docs/guide/README.md).
 
 [![Latest Stable Version](https://img.shields.io/packagist/v/yiisoft/yii2-app-advanced.svg)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
 [![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii2-app-advanced.svg)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
@@ -58,3 +58,22 @@ frontend
 vendor/                  contains dependent 3rd-party packages
 environments/            contains environment-based overrides
 ```
+
+# Start
+1. git clone git@github.com:lkwfive/yii2cms.git 
+2. run command `php init`
+3. setting db `\common\config\main.php`
+```
+'db' => [
+    'class' => 'yii\db\Connection',
+    'dsn' => 'mysql:host=your_host;dbname=your_db_name',
+    'username' => 'your_user_name',
+    'password' => 'xxxxxx',
+    'charset' => 'utf8',
+],
+```
+4. run command `composer install`
+5. run command `yii migrate`
+6. run command `yii migrate/up --migrationPath=@vendor/pheme/yii2-settings/migrations`
+7. run command `php yii serve --docroot="backend/web/"`
+8. now you can open http://localhost:8080/ input `admin` `admin`
