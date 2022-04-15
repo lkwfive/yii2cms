@@ -59,7 +59,7 @@ vendor/                  contains dependent 3rd-party packages
 environments/            contains environment-based overrides
 ```
 
-# Start
+# Use
 1. git clone git@github.com:lkwfive/yii2cms.git 
 2. run command `php init`
 3. setting db `\common\config\main.php`
